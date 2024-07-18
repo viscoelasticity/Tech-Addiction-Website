@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    
+    <!-- responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--desciption, keywords and author-->
+    <meta name="description" content="Technology addiction help">
+    <meta name="keywords" content="Smartphone, video game, screen time">
+    <meta name="author" content="Jinsol Hong">
+    
+    <!-- name of the website that appears on tabs -->
+    <title>Addiction Test | Screen Time Help</title>
+    <!-- linking stylesheet and script -->
+    <link href="../Styles/styles.css" rel="stylesheet" type="text/css">
+    <script src="../Scripts/script.js"></script>
+    
+    <!-- Google Fonts -->
+    <!-- Lato -->
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Roboto -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap" rel="stylesheet">
+ </head>
+    
+<body>
+    <div class="row col14"> <!-- 1st row including the logo and navigation -->
+        <div class="whitespace col1"></div> <!-- whitespace taking up 1/14 of width -->
+        <div class="logo col3"> <!-- div for logo takes up 3/14 of the width -->
+            <img alt="Logo image in the shape of S" src="../Images/lol.jpg"> <!-- logo image -->
+        </div>
+        <div class="navigation col9"> <!-- div for navigation bar takes up 9/14 of the width-->
+             <a class="inactive" href="index.html"><b>HOME</b></a> <!-- each item for navigation bar -->
+            <a class="longinfo inactive" href="information.html"><b>INFORMATION</b>
+            <a class="shortinfo inactive" href="information.html"><b>INFO</b></a>
+            <a class="active" href="test.html"><b>TEST</b></a>
+            <a class="inactive" href="aboutus.html"><b>ABOUT US</b></a>
+        </div>
+        <div class="whitespace col1"></div> <!-- whitespace taking up 1/14 of width -->
+    </div>
+    
+    <div class="row col14">
+        <div class="whitespace col2"></div>
+        <div class="instruction col10">Answer to all of the questions in the technology addiction test below<br>
+            to find out how severe your addiction is.</div>
+        <div class="whitespace col2"></div>
+        
+    </div>
+   
+    <div class="testwrapper col14">
+        <div class="whitespace col2"></div>
+        
+        <div class="test col10">
+            <div id="question">1.You hear the vibration of your phone but there's no notification when you pick it up.</div>
+            
+            <div class="answer">
+                <div class="circle" id="circle1" onclick="clicked1()"></div>
+                <div class="answertext" id="option1">Very often</div>
+            </div>
+            
+            <div class="answer">
+                <div class="circle" id="circle2" onclick="clicked2()"></div>
+                <div class="answertext" id="option2">Often</div>
+            </div>
+            
+            <div class="answer">
+                <div class="circle" id="circle3" onclick="clicked3()"></div>
+                <div class="answertext" id="option3">Sometimes</div>
+            </div>
+            
+            <div class="answer">
+                <div class="circle" id="circle4" onclick="clicked4()"></div>
+                <div class="answertext" id="option4">Rarely</div>
+            </div>
+            
+            <div class="answer">
+                <div class="circle" id="circle5" onclick="clicked5()"></div>
+                <div class="answertext" id="option5">Never</div>
+            </div>
+        
+            <div id="previous">
+                <img alt="left arrow" src="../Images/leftarrow.png">
+                Previous
+            </div>
+            <div onclick="question2()" id="next">
+                <img alt="right arrow" src="../Images/rightarrow.png">
+                Next
+            </div>
+        </div>
+        
+        <div class="whitespace col2"></div>
+    </div>
+    
+    
+    <div class="row col14"> <!-- 4th row including the footer -->
+        <div class="whitespace col1"></div> <!-- whitespace taking up 1/14 of width -->
+        <div class="footer col12">footer</div> <!-- div for footer -->
+        <div class="whitespace col1"></div> <!-- whitespace taking up 1/14 of width -->   
+    </div>
+    
+ </body>
+</html>
